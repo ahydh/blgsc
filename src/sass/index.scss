@@ -1,0 +1,183 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,hr,ul,ol,td,input,option,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+
+/*top*/
+#toppart{
+	width: 100%;
+	height: 33px;
+}
+#navtop{
+	width: 1200px;
+	height: 33px;
+	margin: 0 auto;
+}
+#nt-1{
+	width: 327px;
+	height: 25px;
+	float: left;
+	margin-top: 4px;
+}
+#nt-1 a{
+	font-size: 12px;
+	text-align: center;
+	color: #333333;
+	display: block;
+	margin-right: 5px;
+	float: left;
+}
+#nt-1 a:nth-child(5) img{
+	width:20px ;
+	height: 20px;
+}
+#nt-2{
+	width: 300px;
+	height: 33px;
+	float: right;
+}
+
+#nt-2 ul{
+	width: 300px;
+	height: 33px;
+	margin-left: 5px;
+}
+
+#nt-2 ul li{
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	width: 52px;
+	height: 25px;
+	margin: 0 4px;
+	margin-top: 4px;
+	
+	a {
+		color: #B2A5AD;
+	}
+}
+#nt-2 ul li:nth-child(3){
+	width: 141px;
+}
+
+
+/*header*/
+header{
+	width: 100%;
+	height:100px;
+}
+#head{
+	width: 1200px;
+	height:100px;
+	margin: 0 auto;
+}
+#hd-1{
+	width: 400px;
+	height: 100px;
+	float: left;
+}
+#hd-2{
+	width: 660px;
+	height: 100px;
+	float: right;
+}
+
+#hd-2 input:nth-child(1){
+	width: 240px;
+	height: 25px;
+	float: left;
+	margin-top: 40px;
+	border: 2px solid #F00582;
+	outline: none;
+}
+#hd-2 input:nth-child(2){
+	width: 80px;
+	height: 30px;
+	float: left;
+	margin-top: 40px;
+	background-color:#F00582;
+	border: none;
+	outline: none;
+}
+
+#hd-2 ul li{
+	float: right;
+	width: 60px;
+	height: 70px;
+	background: url(../img/baozhang.png) no-repeat;
+	margin: 0 10px;
+	margin-top: 10px;
+}
+#hd-2 ul li:nth-of-type(1){
+	background-position-y: -153px;
+}
+#hd-2 ul li:nth-of-type(2){
+	background-position-y: -78px;
+}
+
+
+/*topnav*/
+#topnav{
+	width: 100%;
+	height: 38px;
+	background-color:  #F00582;
+	#nav{
+		width: 1146px;
+		height: 22px;
+		margin: 0 auto;
+		padding: 8px 27px;
+		a{
+			display: block;
+			float: left;
+			width: 156px;
+			height: 22px;
+			text-align: center;
+			color: white;
+		}
+		a:nth-of-type(1){
+			width: 180px;
+		}
+	}
+}
+
+/*nav-2*/
+#banner{
+	width: 100%;
+	height: 300px;
+	#nav-2{
+		width: 1200px;
+		height: 300px;
+		margin: 0 auto;
+		#navlist{
+			width: 180px;
+			height: 300px;
+			ul li{
+				width: 180px;
+				height: 37px;
+				background-color: #FBEAF4;
+				span{
+					display: block;
+					width: 16px;
+					height: 18px;
+					background:url(../img/icons_0_24.png);
+					float: left;
+				}
+				a{
+					float: left;
+				}
+			}
+		}
+	}
+}

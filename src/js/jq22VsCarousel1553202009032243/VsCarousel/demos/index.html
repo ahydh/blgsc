@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VsCarousel</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="../dist/vscarousel.min.css">
+  <style type="text/css">
+  	#box{
+		width: 500px;
+	}
+	#vsCarousel{
+		height: 300px;
+	}
+  </style>
+</head>
+
+<body>
+  <!-- 请设置轮播图容器的高度 -->
+  <div id="box">
+  	<div id="vsCarousel" class="vsCarousel m-show">
+  	    <!-- 轮播图元素列表 -->
+  	    <ul class="vsCarousel-wrapper">
+  	        <li class="vsCarousel-slide"><img src="https://picsum.photos/id/250/500/200" alt="1"></li>
+  	        <li class="vsCarousel-slide"><img src="https://picsum.photos/id/251/500/200" alt="2"></li>
+  	        <li class="vsCarousel-slide"><img src="https://picsum.photos/id/252/500/200" alt="3"></li>
+  	    </ul>
+  	    <!-- 前进后退按钮 -->
+  	    <div class="vsCarousel-button">
+  	        <button class="vsCarousel-button-prev"></button>
+  	        <button class="vsCarousel-button-next"></button>
+  	    </div>
+  	    <!-- 分页器 -->
+  	    <div class="vsCarousel-page">
+  	        <button class="vsCarousel-page-play"></button>
+  	        <button class="vsCarousel-page-button" data-index="1"></button>
+  	        <button class="vsCarousel-page-button" data-index="2"></button>
+  	        <button class="vsCarousel-page-button" data-index="3"></button>
+  	    </div>
+  	</div>
+  </div>
+  
+<script src="../dist/vscarousel.min.js"></script>
+<script>
+  let vsCarousel = new VsCarousel('vsCarousel', {
+    effect: 'fade',
+    pege: 'center'
+  });
+</script>
+</body>
+
+</html>

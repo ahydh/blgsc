@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <link rel="stylesheet" href="./page.css">
+</head>
+
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+</body>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="./page.js"></script>
+<script>
+    ZUI.paging({
+        prev_next_text: '上一页|下一页',
+        count: 40,
+        selector: '.a',
+        current: 38,
+        page_len: 7,
+        callBack: function (page) {
+            console.log(page);
+        }
+    })
+    ZUI.paging({
+        prev_next_text: '<|>',
+        count: 20,
+        selector: '.b',
+        current: 16,
+        page_len: 5,
+        color: '#1E9FFF',
+        callBack: function (page) {
+            console.log(page);
+        }
+    })
+</script>
+
+</html>

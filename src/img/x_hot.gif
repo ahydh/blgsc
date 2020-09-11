@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-dns-prefetch-control" content="on"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta content="telephone=no" name="format-detection"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+        <style>
+          body{ background: #EFF3F6; }
+          .error_main{ text-align: center; padding-top:300px;}
+          .error_main *{ padding: 0; margin: 0; }
+          .error_main dl{ width: 390px; margin: 0 auto; text-align: left; }
+          .error_main dl dt{ font-size: 30px; color: #333; height:50px; line-height: 40px;  }
+          .error_main dl dd{ border-radius: 5px; background: #fff; text-align: center; border: solid 1px #CCC; color: #999; font-size:14px;}
+          .error_main dl dd .text{ font-size: 18px; color: #333; padding: 30px 0 10px; }
+          .error_main dl dd .button{ margin: 0 20px; border-top: solid 1px #CCC; color: #999; height: 90px; line-height: 90px;  margin-top: 20px;}
+          .error_main dl dd .button a{ color: #1991EB; margin: 0 5px; text-decoration: none; } 
+          .error_main dl dd .button a:hover{ text-decoration: underline; }
+          .error_main dl dd .img{ padding: 20px 0;font-size: 18px; color: #333; }
+          .error_main dl dd .img img{ display: block; margin: auto auto 20px auto;  }
+
+        </style>
+ </head>
+
+<body>
+  <div class="error_main">    
+    <dl>
+      <dt>大淘客 - 404</dt>
+      <dd>
+        <p class="text">这个页面不存在...</p>
+        请检查来源是否正确
+        <p class="button">
+          <a href="/">返回首页</a>或者<a id="historyGo" href="javascript:;">返回上页</a>
+        </p>
+      </dd>
+    </dl>
+  </div>
+<script type="text/javascript">
+  document.getElementById("historyGo").onclick = function(){
+      if(window.history.length>1){ 
+          window.history.go(-1);  
+          return false;
+      } else {
+          window.location.href = '/';
+      }
+  };
+</script>
+</body>
+</html>
